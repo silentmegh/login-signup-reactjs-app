@@ -19,5 +19,3 @@ Install login-signup-reactjs-app with npm
 ## Tech Stack
 
 **Client:** React, Bootstrap 5
-
-# Hi, I'm Meghanandan! 👋
