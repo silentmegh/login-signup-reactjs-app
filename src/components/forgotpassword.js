@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-class forgotpassword extends Component {
+export default class ForgotPassword extends Component {
     render() {
         return (
-            <div className="container d-flex justify-content-center mt-4">
-                <div className="row mt-4">
-                    <div className="col-md-12">
-                        <h3>Reset your password</h3>
-                        <form>
-                            <div className="form-group">
-                                <input type="password" placeholder="create new password" className="form-control" />
-                            </div>
-                            <Link to="/sign-in">
+            <div className="d-flex align-items-center loginBox">
+                <div className="form-signin bg-white">
+                    <div className="">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <h3>Reset your password</h3>
+                                <form>
+                                    <div className="form-group">
+                                        <input type="password" placeholder="create new password" className="form-control" />
+                                    </div>
 
-                            <button type="submit" className="btn btn-sm btn-primary" >Reset Password</button>
-                            </Link>
-                        </form>
+                                    <div className="">
+                                     <button type="button" className="btn btn-sm btn-primary me-2" >Reset Password</button>
+                                     <Link to="/" className="btn btn-sm btn-secondary" >Back</Link>
+                                    </div>
+                          
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         )
     }
 }
-
-export default forgotpassword
